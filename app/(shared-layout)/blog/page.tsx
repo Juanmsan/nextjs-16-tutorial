@@ -32,18 +32,18 @@ export default function BlogPage() {
           Insights, thoughts, and trends from our team
         </p>
       </div>
-      {/* <Suspense fallback={<SkeletonLoadingUi />}> */}
-      <LoadBlogList />
-      {/* </Suspense> */}
+      <Suspense fallback={<SkeletonLoadingUi />}>
+        <LoadBlogList />
+      </Suspense>
     </div>
   );
 }
 
 async function LoadBlogList() {
-  "use cache";
+  /* "use cache";
   cacheLife("hours");
-  cacheTag("blog");
-  /* await connection(); */
+  cacheTag("blog"); */
+  await connection();
   const data = await fetchQuery(api.posts.getPosts);
 
   return (
