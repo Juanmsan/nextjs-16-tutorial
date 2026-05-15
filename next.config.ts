@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         port: "",
       },
       {
-        hostname: 'energized-corgi-814.convex.site',
+        hostname: 'energized-corgi-814.convex.cloud',
         protocol: 'https',
         port: "",
       }
