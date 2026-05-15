@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  cacheComponents: true,
+  cacheComponents:true,
   images: {
     dangerouslyAllowLocalIP: true,
     remotePatterns: [
@@ -12,10 +12,9 @@ const nextConfig: NextConfig = {
         port: "",
       },
       {
-        hostname: '127.0.0.1',
-        protocol: 'http',
-        port: '3210',
-        pathname: "/api/storage/**"
+        hostname: 'energized-corgi-814.convex.site',
+        protocol: 'https',
+        port: "",
       }
     ],
   },
